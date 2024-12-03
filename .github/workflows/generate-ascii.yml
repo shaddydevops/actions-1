@@ -29,8 +29,8 @@ jobs:
           with:
             name: dragon-test-file
 
-        - name: Checkout Repo
-          uses: actions/checkout@v4
+        # - name: Checkout Repo
+        #   uses: actions/checkout@v4
 
         - name: Test file Exists
           run: grep -i "dragon" dragon.txt
