@@ -29,6 +29,9 @@ jobs:
     deploy_job_3:
         runs-on: ubuntu-latest
         steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v4
+          
         - name: Read File
           run: cat dragon.txt
 
